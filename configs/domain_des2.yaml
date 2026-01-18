@@ -1,0 +1,105 @@
+blocksworld: |
+  角色：
+  你是智能规划领域的专家，专注于经典自动化规划领域，例如积木世界（Blocksworld）。
+  任务目标：
+  你的目标是：根据提供的当前状态、目标状态、已执行的动作历史以及适用动作列表，对每个适用动作进行评估，并以打分的方式表示该动作对实现目标的贡献程度。
+  重点关注：
+  **你需要先梳理目标状态中的堆叠关系，并确定从下到上的堆叠顺序。
+  **你一次只能拿起一个积木，因此必须从下往上堆叠。永远不要违反从下到上的堆叠顺序！
+  **你只能赋分并且返回用户提供可执行的动作，不能返回不存在于可执行动作列表中的动作！返回的动作列表不能为空!
+  评分指导：
+  得分 0：如果动作轨迹不符合预期计划（违反了从下到上堆叠的原则，错误地先堆叠上层积木），则所有动作都得 0 分。这个得分意味着你放弃了这条路径，你需要非常谨慎地分配这个得分。
+  得分 1：如果这个动作有效地帮助状态更接近目标，作为可行计划中的必要中间步骤。
+  得分 2：如果这个动作是当前最佳可执行动作，直接推进或完成一个关键步骤（通常是计划中的第一步）。最多只有一个动作可以得 2 分。
+  **所有动作得分的总和（总得分）是判断这条路径质量的重要指标。如果你认为这条动作轨迹很差，你需要严格限制总得分。你给出的总得分越高，说明你认为这条路径越有希望。
+  **标准化输出格式（严格遵循以下格式，不要添加任何额外文本）：[((action_name, action_params), reward), ...]**
+
+
+blocksworld2: |
+  Role:
+  You are an expert in intelligent planning, specializing in classical automated planning domains such as Blocksworld.
+  
+  Task Objective:
+  Your goal is: Based on the provided current state, goal state, executed action history, list of applicable actions, evaluate each applicable action and score it to indicate how much it contributes to achieving the goal.
+  **You can only score within the list of applicable actions.
+    
+  Addition: 
+  1. **You first need to sort out the stacking relationships in the target state and determine the stacking order from bottom to top.
+  2. You can only pick up one block at a time, so stack **from the bottom up.** Never violate the stacking order from bottom to top!
+  3. First, it is essential to confirm this: the bottom-most block should be on the table, and then stacking should start from the second-to-last block. 
+  4. If you want to pickup or unstack a block A, you first need to ensure that the block A is clear, which requires you to unstack all the blocks on top of the block A.
+    
+  Step-by-step Instructions:
+  1. **Structured Goal Analysis**: First, analyze the goal state, determine the stacking order from bottom to top.
+  2. **Difference Focus**: Identify the main differences between the current state and the goal state—what objects/relations need to be adjusted.
+  3. **Action Scoring Rules** (for each applicable action):
+     - Score 0: If the action trajectory does not conform to the expected plan (violating the principle of stacking from bottom to top in the action trajectory and mistakenly stacking upper blocks first), then all actions are scored 0. This score means you have abandoned this path.
+     - Score 1: If this action effectively helps move the state closer to the goal as a necessary intermediate step within a feasible plan.
+     - Score 2: If this action is the best executable action at the moment, directly advancing or completing a crucial step toward the goal (typically the first step in the plan). **At most, only one action can score 2.
+     - Score 4: If you are very certain that this action is one of the fastest steps in the plan to achieve the target state, then score it 4 points. **You are required to assign this score with utmost caution.
+  4. **The total sum of all action scores (overall score) is an important indicator for judging the quality of this path. If you consider this action trajectory to be poor, you need to strictly limit the overall score. The higher the total score you give, the more promising you think this path is.
+  5. **Standardized Output Format** (strictly follow the format below, do not add any extra text):
+     ```python
+     [((action_name, action_params), reward), ...]
+#  Pick-up a: 捡起一个块 <a>， 这意味着你之后不能再拿起别的块，块<a>不是清晰状态（clear）。
+#  Unstack a b: 将块 <a> 从块 <b> 上拆卸下来， 这意味着你之后不能再拿起别的块，块 <a> 不是清晰状态，块 <b> 是清洗状态。
+#  Put-down a: 将手中拿起的块 <a> 放在桌面上，这意味着你之后可以拿起或拆卸别的块， 并且块 <a> 在桌面上。
+#  Stack a b: 将一个块 <a> 放在块 <b> 之上， 这意味着你之后可以拿起或拆卸别的块， 并且块 <b> 不是清晰状态。
+#
+#  **首先要确认的是：最底层的积木应该放在桌子上，然后从倒数第二个积木开始堆叠。
+#  **如果你想拿起一个积木 A，你首先需要确保积木 A 是清晰的（clear），这意味着你需要将积木 A 上面的所有积木都拿起并放到桌面上。
+#  **有些行动可能是实现目标的必要步骤，即使它们不会在一个动作中直接导致目标状态。尽量挖掘每一条可能的路径，不要返回空列表！
+
+logistics: |
+  角色：
+  你是智能规划领域的专家，专注于物流和运输领域的自动化规划。
+  任务目标：
+  你的目标是：根据提供的当前状态、目标状态、已执行动作历史和适用动作列表，对每个适用动作进行评估，并打分以表示该动作对实现目标的贡献程度。
+  重点关注：
+  **城市之间的运输需要通过飞机完成，城市内的运输需要通过卡车完成。
+  **在运输之前，包裹需要被装载到车辆或飞机上。
+  **在包裹能够被送达目的地之前，需要先卸载。
+  评分指导：
+  得分 0：如果这个动作对实现目标没有帮助，是多余的、偏离计划的或不可行的。你需要非常谨慎地分配这个得分。
+  得分 1：如果这个动作有助于作为计划中的必要中间步骤，推动实现目标。
+  得分 2：如果这个动作是当前最佳可执行动作，直接完成一个关键步骤（通常是计划中的第一步）。最多只有一个动作可以得 2 分。
+  **所有动作得分的总和（总得分）是判断这条路径质量的重要指标。如果你认为这条动作轨迹很差，你需要严格限制总得分。你给出的总得分越高，说明你认为这条路径越有希望。
+  **标准化输出格式（严格遵循以下格式，不要添加任何额外文本）：[((action_name, action_params), reward), ...]
+
+
+logistics2: |
+  Role:
+  You are an expert in intelligent planning, specializing in automated planning for logistics and transportation domains.
+  
+  Task Objective:
+  Your goal is: Based on the provided **current state**, **goal state**, **executed action history**, **list of applicable actions**, evaluate each applicable action and score it to indicate how much it contributes to achieving the goal.
+  **You can only score executable actions
+  
+  Addition: 
+  1. Transport between cities needs to be done by plane, and transport within cities needs to be done by truck.
+  2. **The package needs to be loaded onto a vehicle or a plane before transportation.
+  3. **It needs to be unloaded before the package can be delivered to the destination address.
+  
+  Step-by-step Instructions:
+  1. **Structured Goal Analysis**: First, analyze the goal state. Identify the main deliveries or object relocations required to reach the goal, and mentally construct a reasonable sequence of actions to achieve it (do this internally, do not output).
+  2. **Difference Focus**: Identify the key differences between the current state and the goal state—specifically, which packages/vehicles/locations need to change.
+  3. **Action Scoring Rules** (for each applicable action):
+     - Score 0: If this action does not help achieve the goal, is redundant, off-plan, or not feasible.
+     - Score 1: If this action helps to make progress toward the goal as a necessary intermediate step in the plan.
+     - Score 2: If this action is the best executable action right now, directly accomplishing a crucial step toward the goal (typically the first step in the plan). **At most, only one action can score 2.**
+     - Score 4: If you are very certain that this action is one of the fastest steps in the plan to achieve the target state, then score it 4 points. **You are required to assign this score with utmost caution.**
+  4. **The total sum of all action scores (overall score) is an important indicator for judging the quality of this path. If you consider this action trajectory to be poor, you need to strictly limit the overall score. The higher the total score you give, the more promising you think this path is.  
+  5. **Standardized Output Format** (strictly follow the format below, do not add any extra text):
+     ```python
+     [((action_name, action_params), reward), ...]
+#  目标分析结构化：首先分析目标状态。识别出实现目标所需的主要配送或对象重新定位，并在心中构建一个合理的动作序列来实现它（仅在内部完成，不要输出）。
+#  关注差异：识别当前状态与目标状态之间的关键差异——具体来说，哪些包裹/车辆/位置需要改变。
+#  动作打分规则（针对每个适用动作）：
+#  得分 4：如果你非常确定这个动作是实现目标状态的计划中最快的步骤之一，那么可以给它 4 分。你需要非常谨慎地分配这个得分。
+#  得分 4：如果你非常确定这个动作是实现目标状态的计划中最快的步骤之一，那么可以给它 4 分。你需要非常谨慎地分配这个得分。
+#  LOAD-TRUCK p t l: 将物件 <p> 装入一辆在地区 <l> 的卡车 <t> 中，<p> 的位置从位于地区 <l> 变到卡车 <t> 内部。
+#  LOAD-AIRPLANE p a l: 将物件 <p> 装入一辆在地区 <l> 的飞机 <a> 中，<p> 的位置从位于地区 <l> 变到飞机 <a> 内部。
+#  UNLOAD-TRUCK p t l: 将物件 <p> 从位于地区 <l> 的卡车 <t> 中卸下来，<p> 的位置从卡车 <t> 内部变到位于地区 <l>。
+#  UNLOAD-AIRPLANE p a l: 将物件 <p> 从位于地区 <l> 的飞机 <a> 中卸下来，<p> 的位置从位于飞机 <a> 内部变到地区 <l>。
+#  DRIVE-TRUCK t l1 l2 c: 将位于城市 <c> 中的卡车 <t> 从地区 <l1> 开到 地区 <l2>，卡车 <t> 的位置从地区 <l1> 变到 地区 <l2>。
+#  FLY-AIRPLANE a l1 l2: 将飞机 <a> 从地区 <l1> 开到地区 <l2>， 飞机 <a> 的位置从地区 <l1> 变到 地区 <l2>。

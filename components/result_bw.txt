@@ -1,0 +1,15 @@
+(pick-up b)
+(stack b a)
+(pick-up c)
+(stack c b)
+(pick-up d)
+(stack d c)
+(pick-up e)
+(stack e d)
+(pick-up f)
+(stack f e)
+(pick-up g)
+(stack g f)
+The plan's length: 12
+The planning time: 318.0337836742401
+

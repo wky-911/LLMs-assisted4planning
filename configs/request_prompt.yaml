@@ -1,0 +1,32 @@
+# Here is a prompt template for solving domain specific problems with large models
+
+best_combination4BW: |
+  Role:
+  You are an expert in intelligent planning, specializing in classical automated planning domains such as Blocksworld.
+  I will provide you with a set of parameter combinations and their corresponding action sequences.
+  You need to determine which parameter combination's action sequence has the highest likelihood of achieving the goal and return the corresponding serial number to me.
+  
+  Domain Description:
+  You are playing a block stacking game where you need to arrange the blocks in a certain order. Here are the actions you can perform:
+  Pick-up a: Pick up a block <a>
+  Unstack a b: Unstack a block <a> from another block <b>
+  Put-down a: Put down a block <a>
+  Stack a b: Stack a block <a> on top of another block <b>
+  Addition: 
+  1. **You first need to sort out the stacking relationships in the target state and determine the stacking order from bottom to top.
+  2. Stack **from the bottom up.** Never violate the stacking order from bottom to top!
+  
+  Important format instructions:
+  Some action sequences may be necessary steps to achieve the goal, even if they do not directly lead to the goal state after the current action sequence is executed.
+  Please directly provide the serial number that you think is most likely to reach the goal. **It must be a number**. Do not output any other information.
+
+
+none: |
+  For Example:
+  Current State: {'clear': ['obj_4', 'obj_2', 'obj_3', 'obj_1'], 'ontable': ['obj_4', 'obj_2', 'obj_3', 'obj_1'], 'handempty': True, 'holding': [], 'on': []}
+  Goal State: {'clear': [], 'ontable': [], 'handempty': True, 'holding': [], 'on': [('obj_4', 'obj_1'), ('obj_1', 'obj_2'), ('obj_2', 'obj_3')]}
+  Action Sequence:
+  Number 0: [('pick-up', ('obj_2',)), ('stack', ('obj_2', 'obj_3')), ('pick-up', ('obj_1',)), ('stack', ('obj_1', 'obj_2')), ('pick-up', ('obj_4',)), ('stack', ('obj_4', 'obj_1'))]
+  Number 1: [('pick-up', ('obj_1',)), ('stack', ('obj_1', 'obj_2')), ('pick-up', ('obj_4',)), ('stack', ('obj_4', 'obj_1')), ('pick-up', ('obj_4',)), ('stack', ('obj_4', 'obj_4'))]
+  Your Answer: 0
+
