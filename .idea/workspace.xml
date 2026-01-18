@@ -4,300 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6ec350e-5ed4-47f4-b8b1-2b419cbb2d16" name="更改" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/.idea/LLMs-assisted_planning.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/llm_blocksworld.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/llm_depot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/llm_logistics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/llm_mystery.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/model_parser/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/model_parser/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/model_parser/constants.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/model_parser/parser_new.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/model_parser/parser_new2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/model_parser/writer_new.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/result_bw.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/result_lt.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configs/decomposition.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configs/domain_des2.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configs/domain_des3.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configs/domain_des4.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configs/domain_des5.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configs/domain_des6.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configs/prompt4ds.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configs/prompt4other.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configs/request_prompt.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/depot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-0.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-1.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-10.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-100.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-101.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-102.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-11.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-12.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-13.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-14.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-15.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-16.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-17.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-18.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-19.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-2.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-20.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-21.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-22.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-23.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-24.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-25.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-26.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-27.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-28.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-29.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-3.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-30.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-31.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-32.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-33.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-34.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-35.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-36.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-37.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-38.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-39.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-4.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-40.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-41.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-42.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-43.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-44.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-45.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-46.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-47.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-48.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-49.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-5.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-50.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-51.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-52.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-53.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-54.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-55.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-56.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-57.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-58.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-59.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-6.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-60.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-61.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-62.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-63.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-64.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-65.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-66.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-67.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-68.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-69.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-7.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-70.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-71.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-72.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-73.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-74.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-75.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-76.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-77.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-78.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-79.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-8.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-80.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-81.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-82.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-83.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-84.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-85.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-86.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-87.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-88.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-89.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-9.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-90.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-91.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-92.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-93.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-94.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-95.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-96.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-97.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-98.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/blocksworld/instance-99.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-1.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-10.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-11.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-12.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-13.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-14.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-15.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-16.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-17.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-18.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-19.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-2.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-20.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-21.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-22.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-3.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-4.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-5.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-6.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-7.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-8.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/depot/instance-9.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/domain_blocksworld.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/domain_depot.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/domain_logistics.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/domain_mystery.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-1.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-10.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-11.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-12.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-13.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-14.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-15.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-16.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-17.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-18.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-19.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-2.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-20.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-21.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-22.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-23.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-24.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-25.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-26.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-27.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-28.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-29.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-3.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-30.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-31.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-32.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-33.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-34.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-35.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-36.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-37.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-38.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-39.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-4.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-40.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-41.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-42.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-43.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-44.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-45.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-46.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-47.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-48.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-49.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-5.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-50.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-51.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-52.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-53.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-54.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-55.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-56.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-57.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-58.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-59.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-6.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-60.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-61.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-62.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-63.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-64.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-65.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-66.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-67.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-68.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-69.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-7.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-70.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-71.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-72.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-73.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-74.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-75.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-76.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-77.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-78.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-79.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-8.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-80.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-81.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-82.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-83.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-84.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/logistics/instance-9.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-1.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-10.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-11.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-12.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-13.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-14.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-15.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-16.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-17.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-18.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-19.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-2.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-20.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-21.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-22.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-23.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-24.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-25.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-26.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-27.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-28.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-29.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-3.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-30.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-4.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-5.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-6.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-7.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-8.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ipc_instances/mystery/instance-9.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mystery.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/predecessor_merge.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reason_by_ds.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reason_by_llm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/val/Depots.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/val/pfile1.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/val/pfile1.plan" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/val/validate.py" afterDir="false" />
+    <list default="true" id="d6ec350e-5ed4-47f4-b8b1-2b419cbb2d16" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/linux_script/dw-planner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux_script/sub-instance-planner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks.py" beforeDir="false" afterPath="$PROJECT_DIR$/blocks.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "wky-911"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/wky-911/LLMs-assisted4planning.git",
+    "accountId": "cb6bea05-01de-472f-8b93-dedda08db015"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -307,49 +47,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.blocks.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/PycharmProjects/LLMs-assisted_planning",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/PycharmProjects/LLMs-assisted_planning&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration name="blocks" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LLMs-assisted_planning" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/blocks.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.blocks" />
-      </list>
-    </recent_temporary>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PycharmProjects\LLMs-assisted_planning" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -367,19 +81,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768733997040</updated>
-      <workItem from="1768733998113" duration="4000" />
-      <workItem from="1768734147223" duration="2672000" />
+      <workItem from="1768733998113" duration="740000" />
+      <workItem from="1768743157052" duration="2332000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/LLMs_assisted_planning$blocks.coverage" NAME="blocks 覆盖结果" MODIFIED="1768734269242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

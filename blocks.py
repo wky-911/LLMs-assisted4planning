@@ -9,7 +9,9 @@ from openai import OpenAI
 from val.validate import validate_plan
 from collections import defaultdict, deque
 from components.llm_blocksworld import *
+# The 'directory' corresponds to the directory where the instance of the Blocks domain resides in the Linux system.
 directory='blocksworld'
+# This corresponds to the domain name defined in the "domain.pddl".
 domain='BLOCKS'
 
 """
